@@ -1,0 +1,389 @@
+/****** General ***********/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #9356DC;
+    --second-color: #FF79DA;
+    --thrid-color: #99E2D0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.main-container {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.gap-bottom {
+    margin-bottom: 60px;
+}
+
+/****** SHADOW ***********/
+
+.border-title {
+    width: 100%;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 12px;
+}
+
+.border-paris {
+    width: 100%;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+    margin-top: 2px;
+    background-color: #EAEAEA;
+    color: #353535;
+    gap: 15px;
+}
+
+.border-simple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.border-simple-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.t-size {
+    margin: 30px 40px 5px 40px;
+    text-align: center;
+}
+
+.t-size-nd {
+    font-size: 16px;
+    line-height: 21px;
+    margin: 15px 40px 20px 40px;
+    text-align: center;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-two {
+    display: flex;
+    align-items: center;
+}
+
+.marge {
+    margin-left: 15px;
+}
+
+.omf {
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-size: 40px;
+    line-height: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.omf-two {
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.butt-explo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 220px;
+    background: linear-gradient(to bottom, #DD6EDA, #B060DC);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px
+}
+
+.Fonctionnement {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 20px;
+}
+
+.butt-fonctio {
+    height: 70px;
+    width: 95%;
+    background: #F7F7F7;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    cursor: not-allowed;
+}
+
+.bubble {
+    position: absolute;
+    left: 10px;
+    background-color: #9356DC; /* Couleur violette */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.restaurant {
+    width: 100%;
+    background-color: #F6F6F6;
+}
+
+.resto-cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    gap: 20px;
+}
+
+.resto-cards .card {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 95%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    position: relative;
+}
+
+.resto-cards img {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.resto-content {
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.card-title {
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+
+
+
+
+
+
+
+
+/********** POUR LES I **********/
+
+.fa-mobile-screen-button {
+    color: #7E7E7E;
+    font-size: 20px;
+    position: absolute;
+    left: 50px;
+}
+
+.fa-list-ul {
+    color: #7E7E7E;
+    font-size: 20px;
+    position: absolute;
+    left: 50px;
+}
+
+.fa-store {
+    color: #9356DC;
+    font-size: 20px;
+    position: absolute;
+    left: 50px;
+}
+
+
+/********** FOOTER **********/
+
+.footer-color {
+    background-color: #353535;
+}
+
+.logo-footer {
+    width: 30%;
+    filter: invert(1) brightness(2);
+}
+
+.white {
+    color: white;
+    margin-bottom: -5px;
+}
+
+.marge-footer {
+    margin: 30px;
+}
+
+.fa-handshake-angle {
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+.fa-utensils {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.label {
+    position: absolute;
+    background-color: #99E2D0;
+    width: 80px;
+    height: 27px;
+    border-radius: 2px 2px;
+    left: 72.94%;
+    right: 3.53%;
+    top: 5.18%;
+    bottom: 83.27%;
+}
+
+.bann-nouv {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    color: #008766;
+    font-size: 14px;
+}
+
+.fa-heart {
+    position: absolute;
+    font-size: 24px;
+    width: 22px;
+    height: 21px;
+    right: 25px;
+    bottom: 33px;
+}
+
+/********** LA PALETTE DU GOUT **********/
+
+.img-lpdg {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+}
+
+.LaPalette {
+    background: #F7F7F7;
+    padding-left: 15px;
+    border-radius: 45px;
+    position: absolute;
+    width: 96%;
+    top: 250px;
+}
+
+.border-entrees {
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: #99E2D0;;
+    width: 35px;
+    padding-bottom: 4px;
+    font-size: 15px;
+    margin-left: -2px;
+}
+
+.align-three {
+    display: flex;
+    align-items: center;
+}
+
+.butt-fonctio-two {
+    display: flex;
+    height: 70px;
+    width: 95%;
+    background: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    cursor: not-allowed;
+}
+
+.euros-content {
+    padding-left: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.align-euros {
+    display: flex;
+    gap: 100px;
+}
+
+.back-button {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    background-color: #ffffff; /* Couleur de fond */
+    color: rgb(0, 0, 0); /* Couleur du texte */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.gap-epd {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-color-two {
+    background-color: #353535;
+    position: absolute;
+    top: 1380px;
+}
