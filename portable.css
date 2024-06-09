@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    border: solid 1px red;
 }
 
 a {
@@ -70,9 +71,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #F6F6F6;
-    width: 100%;
     margin-top: 40px;
-    margin-bottom: 20px;
     padding-bottom: 50px;
 }
 
@@ -119,7 +118,7 @@ body {
     font-style: italic;
     font-size: 30px;
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 25px;
 }
 
 .butt-explo {
@@ -140,13 +139,13 @@ body {
 .Fonctionnement {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    align-items: center;
     gap: 20px;
 }
 
 .butt-fonctio {
     height: 70px;
-    width: 95%;
+    width: 100%;
     background: #F7F7F7;
     color: black;
     font-weight: bold;
@@ -165,6 +164,8 @@ body {
     border-radius: 50%;
     font-size: 12px;
     font-weight: bold;
+    margin-right: -15px;
+    z-index: 2;
 }
 
 .restaurant {
@@ -175,7 +176,7 @@ body {
 .resto-cards {
     display: flex;
     flex-direction: column;
-    margin-left: 16px;
+    align-items: center;
     gap: 20px;
 }
 
@@ -183,7 +184,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 250px;
-    width: 95%;
 }
 
 .card {
@@ -202,8 +202,16 @@ body {
 }
 
 .resto-content {
+    display: flex;
+    flex-direction: column;
     padding-left: 10px;
     box-sizing: border-box;
+}
+
+.resto-content-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card-title {
@@ -224,16 +232,23 @@ body {
 .fa-mobile-screen-button {
     color: #7E7E7E;
     font-size: 20px;
+    margin: 0 20px 0 -20px;
+}
+
+.fa-mobile-screen-button:hover {
+    color: #9356DC;
 }
 
 .fa-list-ul {
     color: #7E7E7E;
     font-size: 20px;
+    margin: 0 20px 0 -20px;
 }
 
 .fa-store {
-    color: #9356DC;
+    color: #7E7E7E;
     font-size: 20px;
+    margin: 0 20px 0 -20px;
 }
 
 
@@ -291,6 +306,7 @@ body {
     font-size: 24px;
     width: 22px;
     height: 21px;
+    margin: 0 20px 20px 0;
 }
 
 /********** LA PALETTE DU GOUT **********/
@@ -298,13 +314,13 @@ body {
 .img-lpdg {
         height: 250px;
         object-fit: cover;
+        width: 100%;
 }
 
 .LaPalette {
     background: #F7F7F7;
-    padding-left: 15px;
     border-radius: 45px;
-    width: 96%;
+    width: 100%;
     margin-top: -50px;
 }
 
@@ -326,7 +342,7 @@ body {
 .butt-fonctio-two {
     display: flex;
     height: 70px;
-    width: 95%;
+    width: 100%;
     background: #ffffff;
     border: none;
     border-radius: 20px;
@@ -342,15 +358,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 
 .align-euros {
     display: flex;
     gap: 100px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .back-button {
-    padding: 10px 15px;
     font-size: 1.2em;
     background-color: #ffffff; /* Couleur de fond */
     color: rgb(0, 0, 0); /* Couleur du texte */
@@ -359,13 +377,25 @@ body {
     text-decoration: none;
 }
 
+.button {
+    width: 90%;
+}
+
 .gap-epd {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+    margin-left: 15px;
 }
 
 .footer-color-two {
     background-color: #353535;
+}
+
+.fleche {
+    margin-left: -60px;
+    margin-right: 60px;
+    margin-top: 14px;
+    font-size: 17px;
 }
