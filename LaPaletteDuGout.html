@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./portable.scss">
+    <link rel="stylesheet" href="./portable.css">
     <link rel="stylesheet" href="./ordinateur.css">
     <script src="https://kit.fontawesome.com/c5d662b80d.js" crossorigin="anonymous"></script>
 </head>
@@ -30,7 +30,11 @@
         <div class="marge-pc">
             <section class="LaPalette">
                 <div class="resto-name">
-                    <p class="omf-two"> La pallete du Gout </p> <i class="coeur-unique fa-regular fa-heart"></i>
+                    <p class="omf-two"> La pallete du Gout </p>
+                    <div class="coeurs">
+                        <i class="coeur-unique fa-regular fa-heart"></i>
+                        <i class="coeur-unique fa-solid fa-heart"></i>
+                    </div>
                 </div>
                 <div class="gap-epd" id="entrees">
                     <div>
@@ -171,10 +175,18 @@
             <div class="align-footer">
                 <img class="logo-footer" alt="logofooter" src="./images/logo/ohmyfood.png">
                 <div class="align-footer-two">
-                    <p class="white"><i class="fa-solid fa-utensils"></i> Proposer un restaurant </p>
-                    <p class="white"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire </p>
-                    <p class="white"> Mentions légales </p>
-                    <p class="white"> Contact </p>
+                    <a href="#">
+                        <p class="white"><i class="fa-solid fa-utensils"></i> Proposer un restaurant </p>
+                    </a>
+                    <a href="#">
+                        <p class="white"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire </p>
+                    </a>
+                    <a href="#">
+                        <p class="white"> Mentions légales </p>
+                    </a>
+                    <a href="#">
+                        <p class="white"> Contact </p>
+                    </a>
                 </div>
             </div>
         </div>

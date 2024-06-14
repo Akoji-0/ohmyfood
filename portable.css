@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 5px;
+    margin: 0;
 }
 
 .main-container {
@@ -39,39 +39,41 @@ body {
 
 /*********** SHADOW ***********/
 
-.border-title,
-.border-paris,
-.border-simple,
-.border-simple-two {
-  width: 100%;
-  box-shadow: $box-shadow-default;
-}
-
 .border-title {
-  padding-bottom: 25px;
-  margin-top: 10px;
+    padding-bottom: 30px;
+    padding-bottom: 25px;
+    margin-top: 10px;
+    width: 100%;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
 }
 
 .border-paris {
-  margin-top: 2px;
-  background-color: $bg-color-paris;
-  color: $text-color-paris;
-  gap: 15px;
-}
-
-.border-simple,
-.border-simple-two {
-@include flex-center(column);
-  background-color: $bg-color-simple;
-  padding-bottom: 50px;
+    width: 100%;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+    margin-top: 2px;
+    background-color: #EAEAEA;
+    color: #353535;
+    gap: 15px;
 }
 
 .border-simple {
-  margin: 3px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .border-simple-two {
-  margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    margin-top: 40px;
+    padding-bottom: 50px;
 }
 
 .t-size {
@@ -255,10 +257,6 @@ body {
     margin: 0 20px 0 -20px;
 }
 
-.fa-mobile-screen-button:hover {
-    color: #9356DC;
-}
-
 .fa-list-ul {
     color: #7E7E7E;
     font-size: 20px;
@@ -271,12 +269,80 @@ body {
     margin: 0 20px 0 -20px;
 }
 
+.butt-fonctio:hover .fa-solid {
+    color: #9356DC;
+}
+
+/******* ANIMATION COEUR ACCEUIL ******/
+
+.resto-content-two .coeurs .fa-regular {
+    transition-duration: 0.4s;
+    opacity: 1;
+}
+
+.resto-content-two .coeurs .fa-solid {
+    position: absolute;
+    margin-left: -42px;
+    background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    opacity: 0;
+    height: 23px;
+    width: 24px;
+}
+
+.resto-content-two .coeurs:hover .fa-regular {
+    opacity: 0;
+}
+
+.resto-content-two .coeurs:hover .fa-solid {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+/******* ANIMATION COEUR PALETTE DU GOUT ******/
+
 .fa-heart {
     font-size: 24px;
     width: 22px;
     height: 21px;
     margin: 0 20px 20px 0;
 }
+
+.resto-name .coeurs .fa-regular {
+    transition-duration: 0.4s;
+    opacity: 1;
+}
+
+.resto-name .coeurs .fa-solid {
+    position: absolute;
+    margin-left: -22px;
+    background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    opacity: 0;
+    height: 23px;
+    width: 24px;
+}
+
+.resto-name .coeurs:hover .fa-regular {
+    opacity: 0;
+}
+
+.resto-name .coeurs:hover .fa-solid {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
 
 .coeur-unique {
     margin: 0;
@@ -474,3 +540,48 @@ body {
         margin: 0;
 }
 
+
+/******** CHARGEMENT OVERALL *******/
+
+.chargement {
+    position: fixed;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: -645px;
+    animation: fade-out 3s ease-out both;
+}
+
+@keyframes fade-out {
+    55% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.chargement-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    animation: rotation 3s linear;
+}
+
+@keyframes rotation {
+    100% {
+        transform: rotate(4turn);
+    }
+}
+
+.chargement-cont p {
+    text-align: center;
+}
