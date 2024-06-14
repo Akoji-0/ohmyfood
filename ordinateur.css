@@ -1,0 +1,85 @@
+@media (min-width: 1024px) {
+
+.main-container {
+    width: 100%;
+    padding: 0 0px;
+    box-sizing: border-box;
+}
+
+.t-size {
+    font-size: 35px;
+}
+
+.Fonctionnement {
+    display: flex;
+    flex-direction: row;
+    padding: 0 150px;
+}
+
+.marge {
+    padding: 0 150px;
+}
+
+.resto-cards {
+    gap: 20px;
+    padding: 0 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.logo-footer {
+    width: 9%;
+    filter: invert(1) brightness(2);
+    margin-left: 100px;
+    height: 20px;
+}
+
+.align-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+}
+
+.align-footer-two {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.label {
+    left: 78.94%;
+}
+
+.marge-pc {
+    padding: 0px 175px;
+}
+
+.LaPalette {
+    border-radius: 30px;
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gap-epd {
+    width: 55%;
+}
+
+.omf {
+    margin-bottom: 15px;
+}
+
+.resto-cards a {
+    width: 100%;
+}
+
+.back-button {
+    position: absolute;
+    left: 25px;
+    top: 32px;
+}
+
+}

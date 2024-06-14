@@ -2,7 +2,6 @@
 
 * {
     font-family: 'Roboto', sans-serif;
-    border: solid 1px red;
 }
 
 a {
@@ -38,41 +37,41 @@ body {
     margin-bottom: 60px;
 }
 
-/****** SHADOW ***********/
+/*********** SHADOW ***********/
+
+.border-title,
+.border-paris,
+.border-simple,
+.border-simple-two {
+  width: 100%;
+  box-shadow: $box-shadow-default;
+}
 
 .border-title {
-    width: 100%;
-    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
-    padding-bottom: 12px;
+  padding-bottom: 25px;
+  margin-top: 10px;
 }
 
 .border-paris {
-    width: 100%;
-    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
-    margin-top: 2px;
-    background-color: #EAEAEA;
-    color: #353535;
-    gap: 15px;
+  margin-top: 2px;
+  background-color: $bg-color-paris;
+  color: $text-color-paris;
+  gap: 15px;
+}
+
+.border-simple,
+.border-simple-two {
+@include flex-center(column);
+  background-color: $bg-color-simple;
+  padding-bottom: 50px;
 }
 
 .border-simple {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F6F6F6;
-    width: 100%;
-    margin-top: 3px;
-    margin-bottom: 20px;
-    padding-bottom: 50px;
+  margin: 3px 0 20px;
 }
 
 .border-simple-two {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F6F6F6;
-    margin-top: 40px;
-    padding-bottom: 50px;
+  margin-top: 40px;
 }
 
 .t-size {
@@ -136,14 +135,23 @@ body {
     margin-top: 10px
 }
 
+.butt-explo:hover {
+    filter: brightness(115%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
 .Fonctionnement {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .butt-fonctio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 70px;
     width: 100%;
     background: #F7F7F7;
@@ -151,10 +159,9 @@ body {
     font-weight: bold;
     border: none;
     border-radius: 20px;
-    cursor: pointer;
+    cursor: default;
     font-size: 16px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    cursor: not-allowed;
 }
 
 .bubble {
@@ -171,6 +178,7 @@ body {
 .restaurant {
     width: 100%;
     background-color: #F6F6F6;
+    padding-bottom: 50px;
 }
 
 .resto-cards {
@@ -178,12 +186,20 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.resto-cards a:hover {
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .resto-cards .card {
     display: flex;
     flex-direction: column;
     height: 250px;
+    width: 100%;
 }
 
 .card {
@@ -204,7 +220,7 @@ body {
 .resto-content {
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+    padding: 5px 0 6px 13px;
     box-sizing: border-box;
 }
 
@@ -215,8 +231,12 @@ body {
 }
 
 .card-title {
-    margin-top: 10px;
+    margin-top: 6px;
     margin-bottom: -10px;
+}
+
+.resto-cards a {
+    width: 100%;
 }
 
 
@@ -251,8 +271,24 @@ body {
     margin: 0 20px 0 -20px;
 }
 
+.fa-heart {
+    font-size: 24px;
+    width: 22px;
+    height: 21px;
+    margin: 0 20px 20px 0;
+}
+
+.coeur-unique {
+    margin: 0;
+}
+
 
 /********** FOOTER **********/
+
+.align-footer {
+    display: flex;
+    flex-direction: column;
+}
 
 .footer-color {
     background-color: #353535;
@@ -269,7 +305,7 @@ body {
 }
 
 .marge-footer {
-    margin: 30px;
+    padding: 30px;
 }
 
 .fa-handshake-angle {
@@ -302,13 +338,6 @@ body {
     font-size: 14px;
 }
 
-.fa-heart {
-    font-size: 24px;
-    width: 22px;
-    height: 21px;
-    margin: 0 20px 20px 0;
-}
-
 /********** LA PALETTE DU GOUT **********/
 
 .img-lpdg {
@@ -318,6 +347,8 @@ body {
 }
 
 .LaPalette {
+    z-index: 2;
+    position: relative;
     background: #F7F7F7;
     border-radius: 45px;
     width: 100%;
@@ -353,7 +384,8 @@ body {
 }
 
 .euros-content {
-    padding-left: 10px;
+    padding: 6px 14px 10px 16px;
+    cursor: pointer;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -378,7 +410,7 @@ body {
 }
 
 .button {
-    width: 90%;
+    width: 100%;
 }
 
 .gap-epd {
@@ -387,15 +419,58 @@ body {
     gap: 10px;
     margin-bottom: 20px;
     margin-left: 15px;
+    margin-right: 15px;
+    opacity: 0;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#entrees {
+    animation-delay: 0.60s;
+}
+
+#plats {
+    animation-delay: 1.30s;
+}
+
+#desserts {
+    animation-delay: 1.90s;
+}
+
+
+
+
+
+
+
+
+
 
 .footer-color-two {
     background-color: #353535;
 }
 
 .fleche {
-    margin-left: -60px;
-    margin-right: 60px;
+    margin-left: -70px;
+    margin-right: 70px;
     margin-top: 14px;
     font-size: 17px;
 }
+
+.resto-name {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+}
+
