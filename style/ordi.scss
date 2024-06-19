@@ -46,6 +46,7 @@
 .align-footer-two {
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     gap: 20px;
 }
 
@@ -70,6 +71,7 @@
 }
 
 .omf {
+    font-size: 40px;
     margin-bottom: 15px;
 }
 
@@ -85,5 +87,9 @@
 
 .euros-contet {
     width: 40%;
+}
+
+.border-title {
+    margin-top: 20px;
 }
 }

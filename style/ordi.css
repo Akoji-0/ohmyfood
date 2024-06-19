@@ -1,89 +1,78 @@
 @media (min-width: 1024px) {
-
-.main-container {
+  .main-container {
     width: 100%;
     padding: 0 0px;
     box-sizing: border-box;
-}
-
-.t-size {
+  }
+  .t-size {
     font-size: 35px;
-}
-
-.Fonctionnement {
+  }
+  .Fonctionnement {
     display: flex;
     flex-direction: row;
     padding: 0 150px;
-}
-
-.marge {
+  }
+  .marge {
     padding: 0 150px;
-}
-
-.resto-cards {
+  }
+  .resto-cards {
     gap: 20px;
     padding: 0 150px;
     display: flex;
     flex-direction: row;
     gap: 50px;
     margin-bottom: 50px;
-}
-
-.logo-footer {
+  }
+  .logo-footer {
     width: 6%;
     filter: invert(1) brightness(2);
     height: 18px;
     margin: 0 30px 0 100px;
-}
-
-.align-footer {
+  }
+  .align-footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
     margin: 18px 0 18px 0;
-}
-
-.align-footer-two {
+  }
+  .align-footer-two {
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     gap: 20px;
-}
-
-.label {
+  }
+  .label {
     left: 78.94%;
-}
-
-.marge-pc {
+  }
+  .marge-pc {
     padding: 0px 175px;
-}
-
-.LaPalette {
+  }
+  .LaPalette {
     border-radius: 30px;
     margin-top: -40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.gap-epd {
+  }
+  .gap-epd {
     width: 55%;
-}
-
-.omf {
+  }
+  .omf {
+    font-size: 40px;
     margin-bottom: 15px;
-}
-
-.resto-cards a {
+  }
+  .resto-cards a {
     width: 100%;
-}
-
-.back-button {
+  }
+  .back-button {
     position: absolute;
     left: 25px;
     top: 32px;
-}
-
-.euros-contet {
+  }
+  .euros-contet {
     width: 40%;
-}
-}
+  }
+  .border-title {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=ordi.css.map */
