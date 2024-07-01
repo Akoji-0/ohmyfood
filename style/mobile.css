@@ -244,7 +244,6 @@ body {
   position: absolute;
   margin-left: -41px;
   background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   transition-duration: 0.4s;
@@ -517,7 +516,6 @@ i.fa-solid.fa-circle-check {
   position: absolute;
   margin-left: -24px;
   background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   transition-duration: 0.4s;
