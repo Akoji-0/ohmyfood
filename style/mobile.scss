@@ -438,15 +438,26 @@ i.fa-solid.fa-circle-check {
 }
 
 .euros-content { 
-    padding: 12px 0px 10px 19px;
+    padding: 14px 0px 10px 13px;
     cursor: pointer;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2px;
+    overflow: hidden;
 
     h3 {
         font-size: 18px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    p {
+        font-size: 15px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 }
 
@@ -457,14 +468,13 @@ i.fa-solid.fa-circle-check {
     transition: 0.2s ease;
 
     p {
-        padding: 14px;
+        padding: 14px 14px 14px 0px;
     }
 }
 
 .anim-icone-vert {
     background-color: aquamarine;
     padding: 24.5px 19.5px;
-    border-radius: 0 10px 10px 0;
 }
 
 .back-button {
